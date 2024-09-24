@@ -21,7 +21,7 @@ function App() {
 
       <button onClick={handleChangeIsShowing}>{isTimerShowing ? "Ocultar" : "Mostrar"} Temporizador</button>
 
-      {isTimerShowing === true ? <Timer /> : null}
+      {isTimerShowing === true ? <Timer setIsTimerShowing={setIsTimerShowing}/> : null}
 
     </>
   )
